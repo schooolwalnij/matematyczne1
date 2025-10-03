@@ -4,7 +4,8 @@
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello, World!");
+            Matematyczne math = new Matematyczne();
+            Console.WriteLine(math.NWD(24,18));
         }
     }
 }
