@@ -8,8 +8,6 @@ namespace mATEMATYCZNE
 {
     internal class Matematyczne
     {
-        private int[] tablica;
-
         public int MinMax(int[] tablica, bool czyMin)
         {
             if (tablica == null || tablica.Length == 0)
@@ -59,6 +57,19 @@ namespace mATEMATYCZNE
             int s = Potega(a, n - 1);
             return a * s;
         }
+
+        public int NWW(int a, int b)
+        {
+            return (a * b) / NWD(a, b);
+        }
+
+        public int Silnia(int n)
+        {
+            if (n == 0 || n == 1)
+                return 1;
+            return n * Silnia(n - 1);
+        }
+
 
     }
 }
