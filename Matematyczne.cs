@@ -70,7 +70,7 @@ namespace mATEMATYCZNE
             return n * Silnia(n - 1);
         }
 
-        public int BubbleSort(int[] tablica)
+        public void BubbleSort(int[] tablica)
         {
             int n = tablica.Length;
             for (int i = 0; i < n - 1; i++)
@@ -85,7 +85,10 @@ namespace mATEMATYCZNE
                     }
                 }
             }
-            return 0;
+           for (int i = 0; i < n; i++)
+           {
+               Console.Write(tablica[i] + " ");
+            }
         }
 
 
