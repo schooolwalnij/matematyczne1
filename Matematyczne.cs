@@ -18,5 +18,25 @@ namespace mATEMATYCZNE
             }
             return a;
         }
+
+        public bool CzyPierwsza(int n)
+        {
+            for (int i = 2; i < n; i++)
+            {
+                if (n % i == 0)
+                    return false;
+            }
+            return true;
+        }
+
+        public int Potega(int a, int n)
+        {
+            if (n == 1)
+            {
+                return a;
+            }
+            int s = Potega(a, n - 1);
+            return a * s;
+        }
     }
 }
